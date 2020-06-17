@@ -52,11 +52,35 @@
               <CommandFlag>DefaultInvisible</CommandFlag>
               <CommandFlag>DynamicVisibility</CommandFlag>
           If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidVSIXProjectPackageCmdSet" id="CommandId" priority="0x0100" type="Button">
+      <Button guid="guidVSIXProjectPackageCmdSet" id="DotnetPublishRelease" priority="0x0100" type="Button">
         <Parent guid="guidVSIXProjectPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
-          <ButtonText>nuget-push</ButtonText>
+          <ButtonText>dotnet-publish-release</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidVSIXProjectPackageCmdSet" id="DotnetPublishDebug" priority="0x0101" type="Button">
+        <Parent guid="guidVSIXProjectPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>dotnet-publish-debug</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidVSIXProjectPackageCmdSet" id="NugetPushRelease" priority="0x0102" type="Button">
+        <Parent guid="guidVSIXProjectPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>nuget-push-release</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidVSIXProjectPackageCmdSet" id="NugetPushDebug" priority="0x0103" type="Button">
+        <Parent guid="guidVSIXProjectPackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>nuget-push-debug</ButtonText>
         </Strings>
       </Button>
     </Buttons>
@@ -79,7 +103,10 @@
     <!-- This is the guid used to group the menu commands together -->
     <GuidSymbol name="guidVSIXProjectPackageCmdSet" value="{be015ebc-4ec5-4a91-9add-8223d8a7b003}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="CommandId" value="0x0100" />
+      <IDSymbol name="DotnetPublishRelease" value="0x0100" />
+      <IDSymbol name="DotnetPublishDebug" value="0x0101" />
+      <IDSymbol name="NugetPushRelease" value="0x0102" />
+      <IDSymbol name="NugetPushDebug" value="0x0103" />
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{bde501f2-70eb-4319-88e8-46676a5e93f7}" >
