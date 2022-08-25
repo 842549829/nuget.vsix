@@ -1,15 +1,10 @@
-﻿using System;
-using System.ComponentModel.Design;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using EnvDTE;
+﻿using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using System;
+using System.ComponentModel.Design;
+using System.IO;
 using Task = System.Threading.Tasks.Task;
 
 namespace VSIXProject
